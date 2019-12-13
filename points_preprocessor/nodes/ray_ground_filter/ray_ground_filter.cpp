@@ -325,9 +325,6 @@ void RayGroundFilter::RemovePointsUpTo(const pcl::PointCloud<pcl::PointXYZI>::Pt
 
 void RayGroundFilter::CloudCallback(const sensor_msgs::PointCloud2ConstPtr& in_sensor_cloud)
 {
-  health_checker_ptr_->NODE_ACTIVATE();
-  health_checker_ptr_->CHECK_RATE("topic_rate_points_raw_slow", 8, 5, 1, "topic points_raw subscribe rate slow.");
-
   sensor_msgs::PointCloud2::Ptr trans_sensor_cloud(new sensor_msgs::PointCloud2);
   const bool succeeded = TransformPointCloud(base_frame_, in_sensor_cloud, trans_sensor_cloud);
   if (!succeeded)
@@ -379,8 +376,6 @@ RayGroundFilter::RayGroundFilter() : node_handle_("~"), tf_listener_(tf_buffer_)
 {
   ros::NodeHandle nh;
   ros::NodeHandle pnh("~");
-  health_checker_ptr_ = std::make_shared<autoware_health_checker::HealthChecker>(nh, pnh);
-  health_checker_ptr_->ENABLE();
 }
 
 void RayGroundFilter::Run()

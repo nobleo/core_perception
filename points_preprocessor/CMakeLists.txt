@@ -19,7 +19,6 @@ find_package(catkin REQUIRED COMPONENTS
         tf2
         tf2_ros
         tf2_eigen
-        autoware_health_checker
         )
 
 catkin_package(CATKIN_DEPENDS
@@ -34,7 +33,6 @@ catkin_package(CATKIN_DEPENDS
         tf2
         tf2_ros
         tf2_eigen
-        autoware_health_checker
         )
 
 set(ROSLINT_CPP_OPTS "--filter=-build/c++14")
