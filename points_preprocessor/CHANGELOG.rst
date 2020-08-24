@@ -2,6 +2,11 @@
 Changelog for package points_preprocessor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove Autoware Health Checker as dependency
+* Contributors: Tim Clephas
+
 1.11.0 (2019-03-21)
 -------------------
 * Revert "Fix/health checker (`#2012 <https://github.com/CPFL/Autoware/issues/2012>`_)" (`#2037 <https://github.com/CPFL/Autoware/issues/2037>`_)
