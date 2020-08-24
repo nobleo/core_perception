@@ -8,12 +8,10 @@
   <author email="akihito.ohsato@tier4.jp">aohsato</author>
   <license>Apache 2</license>
 
-  <buildtool_depend>autoware_build_flags</buildtool_depend>
   <buildtool_depend>catkin</buildtool_depend>
 
   <depend>roslint</depend>
   <depend>autoware_config_msgs</depend>
-  <depend>autoware_health_checker</depend>
   <depend>cv_bridge</depend>
   <depend>gtest</depend>
   <depend>message_filters</depend>

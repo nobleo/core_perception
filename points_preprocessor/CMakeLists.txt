@@ -1,11 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(points_preprocessor)
 
-find_package(autoware_build_flags REQUIRED)
+find_package(REQUIRED)
 
 find_package(catkin REQUIRED COMPONENTS
   autoware_config_msgs
-  autoware_health_checker
   cv_bridge
   pcl_conversions
   pcl_ros
