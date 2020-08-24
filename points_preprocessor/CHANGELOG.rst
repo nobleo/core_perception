@@ -2,8 +2,8 @@
 Changelog for package points_preprocessor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.14.9 (2020-08-24)
+-------------------
 * Remove Autoware Health Checker as dependency
 * Contributors: Tim Clephas
 
