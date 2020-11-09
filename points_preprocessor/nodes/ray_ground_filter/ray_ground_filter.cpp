@@ -23,7 +23,7 @@
 #include <sensor_msgs/PointCloud2.h>
 #include <sensor_msgs/PointField.h>
 #include <pcl_ros/transforms.h>
-#include <velodyne_pointcloud/point_types.h>
+#include <velodyne_pcl/point_types.h>
 
 #include "autoware_config_msgs/ConfigRayGroundFilter.h"
 #include "points_preprocessor/ray_ground_filter/ray_ground_filter.h"

@@ -25,7 +25,7 @@
 #include <string>
 #include <ros/ros.h>
 #include <sensor_msgs/PointCloud2.h>
-#include <velodyne_pointcloud/point_types.h>
+#include <velodyne_pcl/point_types.h>
 #include "autoware_config_msgs/ConfigRayGroundFilter.h"
 
 #include <tf2/transform_datatypes.h>

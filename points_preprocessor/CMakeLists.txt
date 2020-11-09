@@ -16,7 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
   tf2
   tf2_eigen
   tf2_ros
-  velodyne_pointcloud
+  velodyne_pcl
 )
 
 catkin_package()
