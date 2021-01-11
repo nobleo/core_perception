@@ -2,8 +2,8 @@
 Changelog for package points_preprocessor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.14.10 (2021-01-11)
+--------------------
 * Upgrade to opencv2
 * Migrate to velodyne_pcl for noetic
 * Contributors: Tim Clephas
