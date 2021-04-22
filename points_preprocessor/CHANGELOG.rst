@@ -2,8 +2,8 @@
 Changelog for package points_preprocessor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.14.14 (2021-04-22)
+--------------------
 * Don't declare type again
 * Contributors: Tim Clephas
 
