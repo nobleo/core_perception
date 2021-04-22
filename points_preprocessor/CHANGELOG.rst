@@ -7,8 +7,8 @@ Changelog for package points_preprocessor
 * Fix zero-division error on empty clouds
 * Contributors: Tim Clephas
 
-Forthcoming
------------
+1.14.15 (2021-04-22)
+--------------------
 * Don't declare type again
 * Contributors: Tim Clephas
 
