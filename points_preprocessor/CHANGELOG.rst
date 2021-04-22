@@ -7,6 +7,11 @@ Changelog for package points_preprocessor
 * Fix zero-division error on empty clouds
 * Contributors: Tim Clephas
 
+Forthcoming
+-----------
+* Don't declare type again
+* Contributors: Tim Clephas
+
 1.14.9 (2020-08-24)
 -------------------
 * Remove Autoware Health Checker as dependency
