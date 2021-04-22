@@ -2,6 +2,11 @@
 Changelog for package points_preprocessor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Don't declare type again
+* Contributors: Tim Clephas
+
 1.14.11 (2021-03-01)
 --------------------
 * Fix zero-division error on empty clouds
