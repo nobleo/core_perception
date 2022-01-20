@@ -10,22 +10,20 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <depend>roslint</depend>
   <depend>autoware_config_msgs</depend>
-  <depend>cv_bridge</depend>
   <depend>gtest</depend>
+  <depend>libopencv-dev</depend>
   <depend>message_filters</depend>
   <depend>pcl_conversions</depend>
   <depend>pcl_ros</depend>
-  <depend>qtbase5-dev</depend>
   <depend>roscpp</depend>
+  <depend>roslint</depend>
   <depend>rostest</depend>
   <depend>sensor_msgs</depend>
-  <depend>std_msgs</depend>
-  <depend>tf</depend>
   <depend>tf2</depend>
-  <depend>tf2_ros</depend>
   <depend>tf2_eigen</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf</depend>
   <depend>velodyne_pcl</depend>
   <depend>yaml-cpp</depend>
 </package>

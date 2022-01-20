@@ -5,13 +5,11 @@ find_package(REQUIRED)
 
 find_package(catkin REQUIRED COMPONENTS
   autoware_config_msgs
-  cv_bridge
   pcl_conversions
   pcl_ros
   roscpp
   roslint
   sensor_msgs
-  std_msgs
   tf
   tf2
   tf2_eigen
@@ -28,7 +26,6 @@ roslint_cpp(
   include/points_preprocessor/ray_ground_filter/ray_ground_filter.h
 )
 
-find_package(Qt5Core REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(PCL 1.7 REQUIRED)
 find_package(OpenMP)
@@ -76,7 +73,6 @@ target_link_libraries(ring_ground_filter
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
   ${OpenCV_LIBRARIES}
-  ${Qt5Core_LIBRARIES}
 )
 
 add_dependencies(ring_ground_filter ${catkin_EXPORTED_TARGETS})
@@ -100,7 +96,6 @@ target_include_directories(ray_ground_filter_lib PRIVATE
 target_link_libraries(ray_ground_filter_lib
   ${catkin_LIBRARIES}
   ${OpenCV_LIBRARIES}
-  ${Qt5Core_LIBRARIES}
 )
 
 add_dependencies(ray_ground_filter_lib ${catkin_EXPORTED_TARGETS})
@@ -140,7 +135,6 @@ target_include_directories(cloud_transformer PRIVATE
 target_link_libraries(cloud_transformer
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
-  ${Qt5Core_LIBRARIES}
 )
 add_dependencies(cloud_transformer ${catkin_EXPORTED_TARGETS})
 
@@ -156,7 +150,6 @@ target_include_directories(compare_map_filter PRIVATE
 target_link_libraries(compare_map_filter
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
-  ${Qt5Core_LIBRARIES}
 )
 add_dependencies(compare_map_filter ${catkin_EXPORTED_TARGETS})
 
