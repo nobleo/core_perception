@@ -90,7 +90,9 @@ void RayGroundFilter::publish(ros::Publisher pub,
 {
   sensor_msgs::PointCloud2::Ptr output_cloud(new sensor_msgs::PointCloud2);
   filterROSMsg(in_sensor_cloud, in_selector, output_cloud);
-  pub.publish(*output_cloud);
+  sensor_msgs::PointCloud2::Ptr transformed_cloud(new sensor_msgs::PointCloud2);
+  TransformPointCloud(output_frame_id_, output_cloud, transformed_cloud);
+  pub.publish(*transformed_cloud);
 }
 
 /*!
@@ -433,6 +435,8 @@ void RayGroundFilter::Run()
 
   node_handle_.param<std::string>("base_frame", base_frame_, "base_link");
   ROS_INFO("base_frame: %s", base_frame_.c_str());
+  node_handle_.param<std::string>("output_frame_id", output_frame_id_, base_frame_);
+  ROS_INFO("output_frame_id_: %s", output_frame_id_.c_str());
 
   node_handle_.param("general_max_slope", general_max_slope_, 3.0);
   ROS_INFO("general_max_slope[deg]: %f", general_max_slope_);
